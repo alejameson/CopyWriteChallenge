@@ -30,8 +30,17 @@ server.use((err, req, res, next) => {
   res.status(status).send(message);
 });
 
-server.get("/", async (req, res) => {
-    return res.send("HOLA MUNDO")
-})
+server.get("/iecho", async (req, res) => {
+  const text = req.query.text;
+  if (/\s/.test(text)) {
+    return res.status(400).send("Ingrese una sola palabra");
+  } else {
+    const splitText = text.split("");
+    const textReverse = splitText.reverse();
+    const textTransform = textReverse.join(" - ");
+    console.log(textTransform, "REVERSE");
+    return res.status(200).json(textTransform);
+  }
+});
 
 module.exports = server;

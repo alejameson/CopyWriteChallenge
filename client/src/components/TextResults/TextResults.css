@@ -1,0 +1,19 @@
+.text_results {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.results_title {
+    font-size: medium;
+}
+
+.results_transform_texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}

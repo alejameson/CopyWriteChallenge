@@ -1,11 +1,13 @@
-import NavBar from './components/Navbar/NavBar';
+import React from 'react';
+import Home from './components/Home/Home';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-    </div>
+    <React.Fragment>
+      <Home />
+    </React.Fragment>
   );
 }
 

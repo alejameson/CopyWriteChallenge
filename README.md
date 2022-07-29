@@ -2,8 +2,8 @@
 Para correr la web debemos seguir los siguientes pasos
 
 # 1 Clonar repositorio
-• Posicionarnos en raiz del directorio "api" y ejecutar en consola npm install
-• Luego posicionarnos en raiz del directorio "client" y tambien ejecutar en consola npm install
+    1. Posicionarnos en raiz del directorio "api" y ejecutar en consola npm install
+    2. Luego posicionarnos en raiz del directorio "client" y tambien ejecutar en consola npm install
 
 # 2 Levantar servidor back end
 • En la raiz del directorio "api" ejecutar comando npm start en consola
